@@ -36,6 +36,10 @@ button:hover img {
     text-align: center;
 }
 
+#spcaption__container {
+    display: none;
+}
+
 #author__container {
     display: flex;
 }
@@ -78,4 +82,8 @@ button:hover img {
 #footer__container p {
     text-align: center;
     color: #a9a9a9;
+}
+
+.sp_only {
+    display: none;
 }

@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./workspage.css">
     <link rel="stylesheet" type="text/css" href="./workspage_sp.css">
     <title>workspage</title>
@@ -30,6 +31,10 @@
       </div>
       <div id="title__container">
         <p>対雨</p>
+        <hr class="sp_only">
+      </div>
+      <div id="spcaption__container">
+        <p>行間を40にしました<br>文字のサイズはタイトル74で、<br>キャプションを42にしています。</p>
       </div>
       <div id="author__container">
         <div class="author__div">
@@ -46,7 +51,7 @@
             </ul>
           </div>
         </div>
-        <div class="author__div">
+        <div class="author__div pc_only">
           <div class="author__column">
             <ul class="author__job">
               <li>Director</li>
@@ -61,10 +66,10 @@
           </div>
         </div>
       </div>
-      <hr>
+      <hr class="pc_only">
       <div id="buttons__container">
         <button type="button"><img src="./img/button_speak11@2x.png" alt=""></button>
-        <button type="button" class="modal__info"><img src="./img/button_info@2x.png" alt=""></button>
+        <button type="button" class="modal__info pc_only"><img src="./img/button_info@2x.png" alt=""></button>
         <div id="modal__info" style="display:none;">
             <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
         </div>
