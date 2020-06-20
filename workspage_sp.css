@@ -22,7 +22,7 @@
         font-size: 25px;
     }
 
-    #spcaption__container {
+    #caption__container {
         order: -1;
         display: block;
         font-size: 14px;
@@ -37,8 +37,13 @@
         justify-content: center;
     }
 
+    #buttons__container button{
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+
     #buttons__container img{
-        height: min(10vw,50px);
+        height: min(8vw,50px);
     }
 
     .pc_only {
