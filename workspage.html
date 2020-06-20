@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./workspage.css">
+    <title>workspage</title>
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'pez4ecw',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+      </script>
+      <script
+        src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous">
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/js/modaal.min.js"></script>
+      <script src="./modal.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="works__container">
+        <div class="square"></div>
+      </div>
+      <div id="title__container">
+        <p>対雨</p>
+      </div>
+      <div id="author__container">
+        <div class="author__div">
+          <div class="author__column">
+            <ul class="author__job">
+              <li>Director</li>
+              <li>Direcion, Design</li>
+              <li>Motion</li>
+            </ul>
+            <ul class="author__name">
+              <li>Masaki Ohno</li>
+              <li>Ayu Kitajima</li>
+              <li>Takaya Hasegawa</li>
+            </ul>
+          </div>
+        </div>
+        <div class="author__div">
+          <div class="author__column">
+            <ul class="author__job">
+              <li>Director</li>
+              <li>Direcion, Design</li>
+              <li>Motion</li>
+            </ul>
+            <ul class="author__name">
+              <li>Masaki Ohno</li>
+              <li>Ayu Kitajima</li>
+              <li>Takaya Hasegawa</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div id="buttons__container">
+        <button type="button"><img src="./img/button_speak11@2x.png" alt=""></button>
+        <button type="button" class="modal__info"><img src="./img/button_info@2x.png" alt=""></button>
+        <div id="modal__info" style="display:none;">
+            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+        </div>
+        <button type="button"><img src="./img/button_good1@2x.png" alt=""></button>
+        <button type="button"><img src="./img/button_twitter@2x.png" alt=""></button>
+        <button type="button"><img src="./img/button_back@2x.png" alt=""></button>
+      </div>
+      <div id="footer__container">
+        <p>@iiiEx2020</p>
+      </div>
+    </div>
+  </body>
+</html>
