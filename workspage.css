@@ -84,3 +84,7 @@ button:hover img {
     text-align: center;
     color: #a9a9a9;
 }
+
+.sp_only {
+    display: none;
+}
