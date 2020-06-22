@@ -23,6 +23,12 @@ button:hover img {
     margin-left: auto;
 }
 
+#works__container iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .square {
     width: 100%;
     height: calc(50vw* 0.6);
@@ -65,7 +71,6 @@ button:hover img {
     padding-right: 20px;
     padding-left: 20px;
     margin-top: 30px;
-    margin-bottom: 30px;
     display: flex;
     justify-content: space-between;
 }
