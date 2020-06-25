@@ -23,6 +23,10 @@ button:hover img {
     margin-left: auto;
 }
 
+#works__container {
+    width: 100%;
+}
+
 #works__container iframe {
     display: block;
     margin-left: auto;
