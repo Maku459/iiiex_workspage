@@ -28,7 +28,7 @@ button:hover img {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    height: 60%;
+    height: calc(50vw * 9/16);
 }
 
 .square {
