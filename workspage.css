@@ -27,6 +27,7 @@ button:hover img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    position: absolute;
 }
 
 .square {
