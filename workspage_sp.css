@@ -1,4 +1,4 @@
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px), screen and (max-height: 480px){
 
     body {
         padding-top:30px;
