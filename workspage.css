@@ -26,11 +26,13 @@ button:hover img {
 
 #works__container {
     position: relative;
-    width: 100%;
+    width: 100vw;
+    left: 50%;
+    margin-left: -50vw;
     overflow:auto; 
     -webkit-overflow-scrolling:touch;
     min-width: 960px;
-    min-height: 640px;
+    min-height: 650px;
 }
 
 #works__container iframe {
