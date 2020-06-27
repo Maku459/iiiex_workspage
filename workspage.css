@@ -87,6 +87,14 @@ button:hover img {
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
+    height: 57px;
+}
+
+#buttons__container a {
+    padding-left: 2px;
+    padding-right: 2px;
+    line-height: 57px;
+    padding-top: 3px;
 }
 
 #buttons__container img{
