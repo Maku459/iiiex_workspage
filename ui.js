@@ -1,4 +1,5 @@
-$('.button_good').on('click',function(e){
-	alert('jQuery is ready.')
-    $('.button_good').children('img').attr('src', './img/button_redheart@2x.png');
-});
+$(document).ready(function(){
+	$('.button_good').on('click',function(e){
+		$('.button_good').children('img').attr('src', './img/button_redheart_noborder@2x.png');
+	});
+})
