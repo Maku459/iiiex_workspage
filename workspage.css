@@ -58,6 +58,14 @@ button:hover img {
     text-align: center;
 }
 
+.title_jp {
+    display: block;
+}
+
+.title_en {
+    display: none;
+}
+
 #author__container {
     display: flex;
 }
@@ -101,10 +109,10 @@ button:hover img {
 }
 
 #buttons__container a {
-    padding-left: 2px;
-    padding-right: 2px;
+    padding-left: 6px;
+    padding-right: 6px;
     line-height: 57px;
-    padding-top: 3px;
+    margin: 2px;
 }
 
 #buttons__container img {

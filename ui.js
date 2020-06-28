@@ -10,10 +10,14 @@ $(document).ready(function(){
 	$('#switch1').click(function(){
 		if($('.caption_jp').css('display') == 'block'){
 			$('.caption_jp').css('display','none');
+			$('.title_jp').css('display','none');
 			$('.caption_en').fadeIn();
+			$('.title_en').fadeIn();
 		}else{
 			$('.caption_en').css('display','none');
+			$('.title_en').css('display','none');
 			$('.caption_jp').fadeIn();
+			$('.title_jp').fadeIn();
 		}
 	});
 	
