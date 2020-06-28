@@ -1,6 +1,6 @@
 body {
     font-family: dnp-shuei-mgothic-std, sans-serif;
-    padding-top:50px;
+    padding-top: 50px;
 }
 
 ul {
@@ -29,20 +29,20 @@ button:hover img {
     width: 100vw;
     left: 50%;
     margin-left: -50vw;
-    overflow:auto; 
-    -webkit-overflow-scrolling:touch;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
     min-width: 960px;
     min-height: 650px;
 }
 
 #works__container iframe {
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    border:none;
-    display:block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
 }
 
 .square {
@@ -83,6 +83,14 @@ button:hover img {
     padding-left: 10px;
 }
 
+.caption_jp {
+    display: block;
+}
+
+.caption_en {
+    display: none;
+}
+
 #buttons__container {
     padding-right: 20px;
     padding-left: 20px;
@@ -99,9 +107,19 @@ button:hover img {
     padding-top: 3px;
 }
 
-#buttons__container img{
+#buttons__container img {
     height: 50px;
     visibility: visible;
+}
+
+#button_speak p {
+    text-align: center;
+}
+
+.button_speak_launch {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
 }
 
 #footer__container p {
@@ -111,4 +129,60 @@ button:hover img {
 
 .sp_only {
     display: none;
+}
+
+.switchArea {
+    line-height: 36px;
+    letter-spacing: 0;
+    text-align: center;
+    font-size: 15px;
+    position: relative;
+    margin: auto;
+    width: 125px;
+    background: #fff;
+    margin-bottom: 20px;
+}
+
+.switchArea input[type="checkbox"] {
+    display: none;
+}
+
+.switchArea label {
+    display: block;
+    box-sizing: border-box;
+    height: 36px;
+    border: 2px solid #999999;
+    border-radius: 18px;
+}
+
+.switchArea input[type="checkbox"]:checked+label {
+    border-color: #ffaf1b;
+}
+
+.switchArea label span:after {
+    content: "JP→EN";
+    padding: 0 0 0 21px;
+    color: #999999;
+}
+
+.switchArea input[type="checkbox"]:checked+label span:after {
+    content: "EN→JP";
+    padding: 0 21px 0 0;
+    color: #ffaf1b;
+}
+
+.switchArea #swImg {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    background: #999999;
+    top: 4px;
+    left: 4px;
+    border-radius: 14px;
+    transition: .2s;
+}
+
+.switchArea input[type="checkbox"]:checked~#swImg {
+    transform: translateX(89px);
+    background: #ffaf1b;
 }
