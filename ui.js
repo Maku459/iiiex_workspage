@@ -1,3 +1,20 @@
+//spaceというクエリを送るのでspaceがあれば、クエリはそのまま、
+//そうでない時（クエリがない時、または文字列が違う時）はクエリをなくす
+let query = window.location.search;
+//◯◯==××という配列に分解
+let queries  = query.slice(1).split("&");
+let referer = false;
+//配列を順番に回して、◯◯の方に"space"という文字列があったら、refererをtrueにして抜ける
+for (let i=0; i<queries.length; i++) {
+	if (queries[i].split("=")[0] == "space") {
+		referer = true;
+		break;
+	}
+}
+//refererがfalseだったら、該当のクエリはないので、クエリの文字列を空にする
+if (!referer) query = "";
+//↑でqueryの文字列の処理が終わったので、リンクのURLの末尾にqueryという変数を追加してください
+
 $(document).ready(function(){
 	$('.button_good').on('click',function(e){
 		$('.button_good').children('img').attr('src', './img/button_redheart_noborder@2x.png');
