@@ -2,7 +2,7 @@
 <html lang="ja" dir="ltr">
   <head>
     <head prefix="og:url" content=>
-    <meta property="og:title" content="対雨" /＞ <br />
+    <meta property="og:title" content="対雨 - 東京大学制作展extra" /＞ <br />
     <meta property="og:type" content="website" />
     <meta property="og:description" content="（キャプション）" />
     <meta property="og:image" content="">
@@ -17,6 +17,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./workspage.css">
     <link rel="stylesheet" type="text/css" href="./workspage_sp.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/modaal@0.4.4/dist/css/modaal.css,npm/modaal@0.4.4/dist/css/modaal.min.css">
     <title>対雨</title>
     <script>
         (function(d) {
@@ -34,15 +35,20 @@
         crossorigin="anonymous">
       </script>
       <script src="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/js/modaal.min.js"></script>
-      <script src="./modal.js"></script>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <script crossorigin src="https://unpkg.com/@daily-co/daily-js"></script>
+      <script src="https://unpkg.com/@daily-co/daily-js"></script>
+      <script type="text/javascript" src="./ui.js"></script>
+      <script type="text/javascript" src="./dailyco.js"></script>
   </head>
   <body>
     <div id="container">
       <div id="works__container">
-        <div class="square"></div>
+          <iframe width="960px" height="650px" src="https://cocky-mayer-81a88f.netlify.app/game.html" frameborder="0" allowfullscreen scrolling=“no”></iframe>
       </div>
       <div id="title__container">
-        <p>対雨</p>
+        <p class="title_jp">対雨</p>
+        <p class="title_en">with rain</p>
         <hr class="sp_only">
       </div>
       <div id="author__container">
@@ -60,7 +66,7 @@
             </ul>
           </div>
         </div>
-        <div class="author__div pc_only">
+        <div class="author__div">
           <div class="author__column">
             <ul class="author__job">
               <li>Motion</li>
@@ -76,14 +82,32 @@
         </div>
       </div>
       <div id="caption__container">
-        <p>言葉を定義することは現象や存在を枠組みに閉じ込めると同時に，気付かなかった視点や情景を認識する後押しをする役割がある．この作品では不自由の象徴として「雨」を取り上げ，スマートフォンの画面を水面に見立てることで，1日の中で変化していく雨を視覚的・聴覚的に表現することを試みた．</p>
+        <div class="caption_box">
+          <input class="sp_only" id="moreread_button" type="checkbox">
+          <label for="moreread_button"></label>
+          <div class="caption_text">
+            <p class="caption_jp">言葉を定義することは現象や存在を枠組みに閉じ込めると同時に，気付かなかった視点や情景を認識する後押しをする役割がある．この作品では不自由の象徴として「雨」を取り上げ，スマートフォンの画面を水面に見立てることで，1日の中で変化していく雨を視覚的・聴覚的に表現することを試みた．</p>
+            <p class="caption_en">Defining words confines phenomena and existence to a framework, and it also allows us to see perspectives and scenes that we have not noticed. It has a role to push for recognition. This work focuses on “rain” as a symbol of inconvenience and makes the screen of the smartphone look like the surface of water. We attempted to express the changing rainfall in a day by using the visually and audibly method.</p>
+          </div>
+          <div class="switchArea">
+            <input type="checkbox" id="switch1">
+            <label for="switch1"><span></span></label>
+            <div id="swImg"></div>
+          </div>
+        </div>
       </div>
       <hr class="pc_only">
       <div id="buttons__container">
-        <button type="button" class="button_speak"><img src="./img/button_speak@2x.png" alt=""></button>
+        <button type="button" class="button_speak"><img src="./img/button_sf2_active@2x.png" alt=""></button>
+        <div id="button_speak" style="display:none;">
+          <p class="speak_active">ビデオ通話ツール（カメラはオフ）を使って、制作展メンバーから直接話を聞くことができます。</p>
+          <div class="speak_active"><a href="#" onclick="run();return false;"><img src="./img/button_sf2_active@2x.png" class="button_speak_launch" width="200px" alt=""></a></div>
+          <p class="speak_inactive">10:00~18:00の間、制作展メンバーから直接話を聞くことができます。</p>
+        </div>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSffj8nRImiU8udHxho5y-IZpp7uqf53oqNvIycAh8CtWnhKTA/viewform?usp=sf_link" target="_blank"><img src="./img/button_write2@2x.png" alt=""></a>
         <button type="button" class="button_good"><img src="./img/button_good1@2x.png" alt=""></button>
-        <button type="button" class="button_twitter"><img src="./img/button_twitter@2x.png" alt=""></button>
-        <button type="button" class="button_back"><img src="./img/button_back@2x.png" alt=""></button>
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" target="_blank" data-via="@iiiexhibition" data-hashtags="iiiEx WHOZIPSYOU" data-related="iiiexhibition" data-show-count="false"><img src="./img/logo_twitter_blue@2x.png" alt=""></a>
+        <a href="http://iiiexhibition.com/log/2020/extra/main/#" class="button_back"><img src="./img/button_back@2x.png" alt=""></a>
       </div>
       <div id="footer__container">
         <p>@iiiEx2020</p>
