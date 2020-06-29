@@ -13,11 +13,37 @@ $(document).ready(function(){
 			$('.title_jp').css('display','none');
 			$('.caption_en').fadeIn();
 			$('.title_en').fadeIn();
+			if($('.caption_text').css('height') == '120px'){
+				$('#moreread__button').attr('data-display', $('#moreread__button').data('text')[1]);
+			}else{
+				$('#moreread__button').attr('data-display', $('#moreread__button').data('text')[3]);
+			}
 		}else{
 			$('.caption_en').css('display','none');
 			$('.title_en').css('display','none');
 			$('.caption_jp').fadeIn();
 			$('.title_jp').fadeIn();
+			if($('.caption_text').css('height') == '120px'){
+				$('#moreread__button').attr('data-display', $('#moreread__button').data('text')[0]);
+			}else{
+				$('#moreread__button').attr('data-display', $('#moreread__button').data('text')[2]);
+			}
+		}
+	});
+
+	$('#moreread__switch').click(function(){
+		if($('.caption_jp').css('display') == 'block'){
+			if($('.caption_text').css('height') == '120px'){
+				$('#moreread__button').attr('data-display', $('#moreread__button').data('text')[0]);
+			}else{
+				$('#moreread__button').attr('data-display', $('#moreread__button').data('text')[2]);
+			}
+		}else{
+			if($('.caption_text').css('height') == '120px'){
+				$('#moreread__button').attr('data-display', $('#moreread__button').data('text')[1]);
+			}else{
+				$('#moreread__button').attr('data-display', $('#moreread__button').data('text')[3]);
+			}
 		}
 	});
 	
