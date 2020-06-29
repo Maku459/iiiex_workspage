@@ -155,11 +155,13 @@
     .caption_box .caption_text {
         overflow: hidden;
         height: 120px; 
+        transition: .2s;
     }
 
     .caption_box input:checked ~ .caption_text {
         height: auto;
         padding-bottom: 20px;
+        transition: .2s;
     }
 
     .switchArea {
