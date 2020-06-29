@@ -200,7 +200,18 @@
     #buttons__container button{
         padding-left: 2px;
         padding-right: 2px;
-        margin-bottom: 30px;
+        padding-top: 0;
+        padding-bottom: 0;
+        border: 0;
+        line-height: 57px;
+        margin: 2px;
+    }
+
+    #buttons__container a {
+        padding-left: 2px;
+        padding-right: 2px;
+        line-height: 57px;
+        margin: 2px;
     }
 
     #buttons__container img{
