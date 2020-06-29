@@ -39,7 +39,7 @@ $(document).ready(function(){
 	});
 	
 	var now_hour = new Date().getHours();
-    if ( 10 <= now_hour && now_hour <= 18 ){
+    if ( 10 <= now_hour && now_hour <= 19 ){
 		$('.button_speak').children('img').attr('src', './img/button_sf2_active@2x.png');
 		$('.speak_inactive').css('display','none');
 		$('.speak_active').css('display','block');
