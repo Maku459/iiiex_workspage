@@ -123,7 +123,11 @@ button:hover img {
 #button_speak p {
     text-align: center;
 }
-
+.button_speak {
+	height: 53px;
+	width: 228px;
+	padding: 0;
+}
 .button_speak_launch {
     margin-right: auto;
     margin-left: auto;
