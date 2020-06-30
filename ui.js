@@ -23,7 +23,7 @@ window.onload =function(){
 
 $(document).ready(function(){
 	$('.button_good').on('click',function(e){
-		$('.button_good').children('img').attr('src', './img/button_redheart_noborder@2x.png');
+		$('.button_good').children('img').attr('src', 'https://object-storage.tyo2.conoha.io/v1/nc_7d0030b822e246239683a325ebfb1974/iiiex/works/src/img/button_redheart_noborder%402x.png');
 	});
 
 	$('.button_speak').modaal({
@@ -72,11 +72,11 @@ $(document).ready(function(){
 	
 	var now_hour = new Date().getHours();
     if ( 10 <= now_hour && now_hour <= 19 ){
-		$('.button_speak').children('img').attr('src', './img/button_sf2_active@2x.png');
+		$('.button_speak').children('img').attr('src', 'https://object-storage.tyo2.conoha.io/v1/nc_7d0030b822e246239683a325ebfb1974/iiiex/works/src/img/button_sf2_active%402x.png');
 		$('.speak_inactive').css('display','none');
 		$('.speak_active').css('display','block');
     } else {
-		$('.button_speak').children('img').attr('src', './img/button_sf2_inactive@2x.png');
+		$('.button_speak').children('img').attr('src', 'https://object-storage.tyo2.conoha.io/v1/nc_7d0030b822e246239683a325ebfb1974/iiiex/works/src/img/button_sf2_inactive%402x.png');
 		$('.speak_active').css('display','none');
 		$('.speak_inactive').css('display','block');
     }
