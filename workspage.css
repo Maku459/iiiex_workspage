@@ -46,9 +46,22 @@ button:hover img {
 }
 
 .square {
-    width: 100%;
-    height: calc(50vw* 0.6);
+    display: none;
+    width: 960px;
+    height: 650px;
     background: black;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    font-size: 15px;
+}
+
+.square p{
+    position: absolute;
+    top: 35%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
 }
 
 #title__container p {
