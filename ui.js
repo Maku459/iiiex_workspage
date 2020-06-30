@@ -14,6 +14,11 @@ for (let i=0; i<queries.length; i++) {
 //refererがfalseだったら、該当のクエリはないので、クエリの文字列を空にする
 if (!referer) query = "";
 //↑でqueryの文字列の処理が終わったので、リンクのURLの末尾にqueryという変数を追加してください
+window.onload =function(){ 
+	var target = document.getElementById("button_back");
+	var url = `https://www.iiiexhibition.com/#${query}`;
+	target.href = url;
+}
 
 $(document).ready(function(){
 	$('.button_good').on('click',function(e){
