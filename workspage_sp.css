@@ -205,14 +205,14 @@
         padding-top: 0;
         padding-bottom: 0;
         border: 0;
-        line-height: 57px;
+        line-height: 53px;
         margin: 2px;
     }
 
     #buttons__container a {
         padding-left: 2px;
         padding-right: 2px;
-        line-height: 57px;
+        line-height: 50px;
         margin: 2px;
     }
 
