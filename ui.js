@@ -16,7 +16,8 @@ if (!referer) query = "";
 //↑でqueryの文字列の処理が終わったので、リンクのURLの末尾にqueryという変数を追加してください
 window.onload =function(){ 
 	var target = document.getElementById("button_back");
-	var url = `https://www.iiiexhibition.com/#${query}`;
+	var url = `https://www.iiiexhibition.com/`;
+	if (query) url = 'https://extra2020-dev.iiiexhibition.com/' + query;
 	target.href = url;
 }
 
