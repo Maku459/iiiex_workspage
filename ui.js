@@ -37,7 +37,8 @@ $(document).ready(function(){
 		content_source: '#button_speak'
 	});
 
-	$('.speak_active > img').on('click',function(e){
+	$('.speak_active > a > img').on('click',function(e){
+		console.log("close")
 		$('.button_speak').modaal('close');
 	});
 
