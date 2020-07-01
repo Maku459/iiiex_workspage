@@ -37,6 +37,10 @@ $(document).ready(function(){
 		content_source: '#button_speak'
 	});
 
+	$('.speak_active > a').on('click',function(e){
+		$('.button_speak').modaal('close');
+	});
+
 	$('#switch1').click(function(){
 		if($('.caption_jp').css('display') == 'block'){
 			$('.caption_jp').css('display','none');
