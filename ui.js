@@ -37,7 +37,7 @@ $(document).ready(function(){
 		content_source: '#button_speak'
 	});
 
-	$('.speak_active > a').on('click',function(e){
+	$('.speak_active > img').on('click',function(e){
 		$('.button_speak').modaal('close');
 	});
 
