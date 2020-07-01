@@ -83,7 +83,7 @@ $(document).ready(function(){
 	});
 	
 	var now_hour = new Date().getHours();
-    if ( 10 <= now_hour && now_hour <= 19 ){
+    if ( 11 <= now_hour && now_hour <= 19 ){
 		$('.button_speak').children('img').attr('src', 'https://object-storage.tyo2.conoha.io/v1/nc_7d0030b822e246239683a325ebfb1974/iiiex/works/src/img/button_sf2_active%402x.png');
 		$('.speak_inactive').css('display','none');
 		$('.speak_active').css('display','block');
