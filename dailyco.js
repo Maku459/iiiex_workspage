@@ -57,7 +57,7 @@ async function run() {
     let path = location.pathname;
     let works_name = path.match(/^\/works\/([^\/]+).*/);
     let daily_co_url = WORKS_INFO[works_name[1]]['daily_co_url'];
-    room = { url: daily_co_url }
+    let room = { url: daily_co_url }
 
     // create a video call iframe and add it to document.body
     // defaults to floating window in the lower right-hand corner
