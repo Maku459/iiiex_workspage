@@ -19,9 +19,18 @@ window.onload =function(){
 	var url = `https://www.iiiexhibition.com/`;
 	if (query) url = 'https://extra2020-dev.iiiexhibition.com/' + query;
 	target.href = url;
+
+	lottie.loadAnimation({
+		container: body, // the dom element that will contain the animation
+		renderer: 'svg',
+		loop: false,
+		autoplay: true,
+		path: 'data.json' // the path to the animation json
+	});
 }
 
 $(document).ready(function(){
+
 	var w = $(window).width();
 	var x = 480;
 	if (w <= x && $('.square').length) {
