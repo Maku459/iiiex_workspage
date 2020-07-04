@@ -1,6 +1,6 @@
 body {
     font-family: dnp-shuei-mgothic-std, sans-serif;
-    padding-top: 50px;
+    margin: 0px;
 }
 
 ul {
@@ -17,11 +17,148 @@ button:hover img {
     filter: alpha(opacity=60);
 }
 
+#header {
+    width: 100vw;
+    height: 60px;
+    background-color: white;
+    border-bottom: 1px solid #B1B1B1;
+}
+
+.logo {
+    color: #fff;
+    font-weight: bold;
+    text-align: undefined;
+    max-height: 40px;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 2%;
+    letter-spacing: 4px;
+}
+
+#header nav {
+    float: right;
+    width: 80%;
+    text-align: right;
+}
+
+#header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    justify-content: flex-end;
+}
+
+#header nav ul li {
+    float: left;
+    color: #000000;
+    font-size: 13px;
+    text-align: left;
+    margin-right: 15px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    transition: all 0.3s linear;
+}
+
+#header nav ul li .button_speak {
+    line-height: 26px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 12px;
+    display: inline-block;
+    position: relative;
+    margin: auto;
+    width: 145px;
+    background: #FFFFFF;
+    visibility: visible;
+    display: block;
+    box-sizing: border-box;
+    height: 30px;
+    border: 2px solid #ffaf1b;
+    border-radius: 15px;
+    background: #ffaf1b;
+}
+
+#header nav ul li .button_speak span:after {
+    content: "説明を聞く";
+    font-family: dnp-shuei-mgothic-std, sans-serif;
+    color: #FFFFFF;
+}
+
+#header nav ul li .modaal-content-container {
+    display: block;
+}
+
+#header nav ul li .button_speak_launch {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+#header nav ul li .button_review {
+    line-height: 26px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 12px;
+    display: inline-block;
+    position: relative;
+    margin: auto;
+    width: 145px;
+    background: #FFFFFF;
+    visibility: visible;
+    display: block;
+    box-sizing: border-box;
+    height: 30px;
+    border: 2px solid #ffaf1b;
+    border-radius: 15px;
+    background: #ffaf1b;
+    text-decoration: none;
+}
+
+#header nav ul li .button_review span:after {
+    content: "感想を送る";
+    font-family: dnp-shuei-mgothic-std, sans-serif;
+    color: #FFFFFF;
+}
+
+#header nav ul li .twitter {
+    width: 32px;
+    height: 32px;
+    margin-right: -5px;
+    background: url("https://object-storage.tyo2.conoha.io/v1/nc_7d0030b822e246239683a325ebfb1974/iiiex/works/src/img/button_twitter_gray%402x.png") no-repeat;
+    background-size: cover;
+    display: block;
+    text-indent: -9999px;
+}
+
+#header nav ul li .button_good {
+    width: 32px;
+    height: 32px;
+    margin-right: -5px;
+    background: url("https://object-storage.tyo2.conoha.io/v1/nc_7d0030b822e246239683a325ebfb1974/iiiex/works/src/img/button_heart_gray%402x.png") no-repeat;
+    background-size: cover;
+    display: block;
+    text-indent: -9999px;
+}
+
+#header nav ul li #button_back {
+    width: 32px;
+    height: 32px;
+    margin-right: -5px;
+    background: url("https://object-storage.tyo2.conoha.io/v1/nc_7d0030b822e246239683a325ebfb1974/iiiex/works/src/img/button_return_gray%402x.png") no-repeat;
+    background-size: cover;
+    display: block;
+    text-indent: -9999px;
+}
+
 #container {
     width: 50vw;
     min-width: 645px;
     margin-right: auto;
     margin-left: auto;
+    padding-top: 60px;
 }
 
 #works__container {
@@ -56,7 +193,7 @@ button:hover img {
     font-size: 15px;
 }
 
-.square p{
+.square p {
     position: absolute;
     top: 35%;
     transform: translateY(-50%);
@@ -110,41 +247,6 @@ button:hover img {
 
 .caption_en {
     display: none;
-}
-
-#buttons__container {
-    padding-right: 20px;
-    padding-left: 20px;
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-between;
-    height: 57px;
-}
-
-#buttons__container a {
-    padding-left: 6px;
-    padding-right: 6px;
-    line-height: 57px;
-    margin: 2px;
-}
-
-#buttons__container img {
-    height: 50px;
-    visibility: visible;
-}
-
-#button_speak p {
-    text-align: center;
-}
-.button_speak {
-	height: 53px;
-	width: 228px;
-	padding: 0;
-}
-.button_speak_launch {
-    margin-right: auto;
-    margin-left: auto;
-    display: block;
 }
 
 #footer__container p {
@@ -210,4 +312,8 @@ button:hover img {
 .switchArea input[type="checkbox"]:checked~#swImg {
     transform: translateX(89px);
     background: #ffaf1b;
+}
+
+#buttons__container {
+    display: none;
 }

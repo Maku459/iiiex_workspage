@@ -190,8 +190,13 @@
     .switchArea input[type="checkbox"]:checked~#swImg {
         transform: translateX(99px);
     }
+
+    #header {
+        display: none;
+    }
     
     #buttons__container {
+        display: block;
         z-index: 2;
         width: 95vw;
         padding-left: 0;

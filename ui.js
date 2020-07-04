@@ -30,7 +30,8 @@ $(document).ready(function(){
 	}
 
 	$('.button_good').on('click',function(e){
-		$('.button_good').children('img').attr('src', 'https://object-storage.tyo2.conoha.io/v1/nc_7d0030b822e246239683a325ebfb1974/iiiex/works/src/img/button_redheart_noborder%402x.png');
+		//$('.button_good').children('img').attr('src', 'https://object-storage.tyo2.conoha.io/v1/nc_7d0030b822e246239683a325ebfb1974/iiiex/works/src/img/button_redheart_gray%402x.png');
+		$('.button_good').css('background', url("https://object-storage.tyo2.conoha.io/v1/nc_7d0030b822e246239683a325ebfb1974/iiiex/works/src/img/button_redheart_gray%402x.png"));
 	});
 
 	$('.button_speak').modaal({
